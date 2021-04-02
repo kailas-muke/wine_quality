@@ -28,8 +28,8 @@ def index():
 
         except Exception as e:
             print(e)
-            error = {"error": "main Something wrong!! Try again later"}
-            #error = {"error": e}
+            #error = {"error": "main Something wrong!! Try again later"}
+            error = {"error": e}
 
             return render_template("404.html", error=error)
     else:
